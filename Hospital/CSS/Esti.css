@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+
+}
+
+li{
+    list-style: none;
+    list-style-position: le;
+    display: flex;
+}
+
+a{
+    text-decoration: none  ;
+}
+
+.nav{
+    background: rgba(224, 129, 193, 0.5);
+   box-shadow: 5px 4px 5px gray ;
+}

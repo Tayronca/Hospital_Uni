@@ -1,0 +1,25 @@
+.Container{
+    height: 0px;
+}
+
+footer{
+    background: #202020;
+    color: white;
+    height: 110px;
+
+}
+
+.card text-center {
+    margin: 40px;
+
+}
+
+.text{
+    text-align:center;
+  
+}
+
+.carousel-inner{
+    height:800px ;
+}
+

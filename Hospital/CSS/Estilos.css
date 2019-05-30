@@ -13,7 +13,7 @@ header{
 
 
 .container-info-home{
-    background-image: url(/Imagenes/05.jpg);
+    background-image: url(/Imag);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -23,27 +23,32 @@ header{
     text-align: center;
     padding-top: 100px;
     height: 800px;
+
+
 }
 
 
-.nave{
+.main{
    
-    width: auto;
-    float: right;
-    margin-top: 30px;
+   background-color: black; 
+   height: 41px;
+   
     
 }
 
 
-.nave ul{
+.main ul{
+    list-style: none;
+    
     display: flex;
+    justify-content: right; 
 }
  
-.nave li{
-    list-style: none;
+.main li:hover{
+    background: pink;
 }
 
-.nave li a{
+.main li a{
     padding: 18px;
     text-decoration: none;
     color: white;
@@ -52,7 +57,28 @@ header{
     color: #b7b7b7;
     background: #c65656;
     color:white;
+    
 }
-.menu li a:hover{
-    color:white;
+
+.main a{
+    text-decoration: none;
+    
+}
+
+.fondo{
+    background-color: rgb(145, 112, 112);
+    opacity: 0.6;
+    width: 500px;
+    height: 100px;
+}
+
+.text{
+    color: #000;
+}
+
+footer{
+    background: #202020;
+    color: white;
+    width: 100%;
+
 }
