@@ -10,20 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="./Imagenes/3efc79ee-d03c-4a11-a5e3-63a9bd48a1cb_200x200.png" width="60" height="60" class="d-inline-block align-top" alt="">
-          Hospital San Juan de Dios
-        </a>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Salir</a>
-          </li>
+<nav class="navbar">
+  <ul class="navul">
+      <img src="./Imagenes/3efc79ee-d03c-4a11-a5e3-63a9bd48a1cb_200x200.png" width="60" height="60" class="imann" alt="">
+      <li class="nom" ><a>Hospital San Juan de Dios</a> </li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Salir</a></li>
       
-        </ul>
+  </ul>
         
     
 </nav>
@@ -35,36 +29,23 @@
 </div>
 <div id="formulario">
   <form action="">
-    <p>Primer Nombre</p>
+    <p>Nombres Completos</p>
     <div class="field-container">
         <i class="fas fa-address-card"></i>
-        <input type="text" class="field" required><br/> 
-    </div>
-
-    <p>Segundo Nombre</p>
-    <div class="field-container">
-        <i class="fas fa-address-card"></i>
-        <input type="text" class="field"><br/>
-          
+        <input type="text" class="field" required  title="Ingrese sus nombres puede ser uno o dos"><br/> 
     </div>
     
- <p>Apellido Paterno</p>
+ <p>Apellidos Completos</p>
  <div class="field-container">
-    <i class="far fa-address-card"></i>
-    <input type="text" class="field"><br/>
+    <i class="fas fa-address-card"></i>
+    <input type="text" class="field" required title="Ingrese los apellidos que tenga"><br/>
  </div>
    
- 
- <p>Apellido Materno</p>
- <div class="field-container">
-    <i class="far fa-address-card"></i>
- <input type="text" class="field"><br/>
-</div>
- 
+
  <p>Número de Cedula</p>
  <div class="field-container">
     <i class="fas fa-id-card"></i>
- <input type="number" class="field" required pattern="[0-9] {10}" title="Ingrese sus 10 numeros" ><br/>
+ <input type="number" class="field" required pattern="[0-9] {10}" title="Ingrese 10 numeros" ><br/>
  
 </div>
  
