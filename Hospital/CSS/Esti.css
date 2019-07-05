@@ -1,19 +1,62 @@
-*{
-    margin: 0px;
-
+body{
+    background: #cce4fc;
+    background-size: cover;
 }
 
-li{
-    list-style: none;
-    list-style-position: le;
-    display: flex;
+.main-section{
+    margin: 0 auto;
+    margin-top:25%;
+    padding:0;
 }
 
-a{
-    text-decoration: none  ;
+.modal-content{
+    background-color: #a16c6c;
+    opacity: .86 ;
+    padding: 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
 }
 
-.nav{
-    background: rgba(224, 129, 193, 0.5);
-   box-shadow: 5px 4px 5px gray ;
+.user-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border: 0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+
+.form-group::before{
+font-family: "Font Awesome\ 5 Free";
+position: absolute;
+left: 28px;
+font-size: 22px;
+padding-top:4px; 
+}
+
+.form-group#user-group::before{
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f084";
+}
+
+button{
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot{padding: 5px 0;
+}
+
+.forgot a{
+    color:black;
 }

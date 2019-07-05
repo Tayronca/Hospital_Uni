@@ -1,0 +1,49 @@
+body{font-family: Arial; 
+    background-color: #18A383;
+     box-sizing: border-box; 
+     padding-top: 100px;
+}
+
+form{
+    background-color: white;
+    border-radius: 0 0 3px 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+.field{
+    border: solid 1px #ccc;
+    border-radius: 0 5px 5px 0;
+    padding: 7px;
+    width: 200px;
+}
+
+.field:focus{
+    border-color: #18A383;
+}
+.center-content{
+    text-align: center;
+}
+.field-container div{
+  display: inline-block;
+  vertical-align: top;
+}
+.field-container i{
+    border: solid 1px #ccc;
+    background-color: #ddd;
+    border-radius: 5px 0 0 5px;
+    color: #888;
+    padding: 10px 10px 11px 10px;
+    margin-right: -5px;
+    vertical-align: top;
+}
+footer{
+    background: #202020;
+    color: white;
+    height: 110px;
+    margin-top: 75px;
+}
