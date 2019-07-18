@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="./CSS/form.css">
+    <script src="https://kit.fontawesome.com/618fdb1e7d.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./Imagenes/3efc79ee-d03c-4a11-a5e3-63a9bd48a1cb_200x200.png" width="60" height="60" class="d-inline-block align-top" alt="">
+          Hospital San Juan de Dios
+        </a>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="../Hospital/Inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Hospital/Reuser.html">Ingresar Paciente</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Agendar Cita</a>
+            </li>
+      
+        </ul>
+        <a class="btn btn-primary" href="../Hospital/Homen.html" role="button">Salir</a> </nav>
+        
+    
+</nav>
+
+   <div class="formulario">
+      <form >
+          <p>Ingrese Numero de Historia Clinica</p>
+          <div class="field-container">
+              <i class="fas fa-address-card"></i>
+              <input type="text" class="field" required ><br/> 
+          </div>
+          
+       <p>Ingrese Fecha de Cita</p>
+       <div class="field-container">
+          <i class="fas fa-address-card"></i>
+          <input type="date" class="field" required ><br/>
+       </div>
+      
+      <p>
+          <input class="btn btn-primary" type="submit" value="Enviar"> 
+         </form>
+      
+   </div>
+        
+
+
+
+ 
+
+<footer class="page-footer font-small teal pt-4">
+
+        <div class="container-fluid text-center text-md-left">
+      
+          <div class="row">
+      
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <h5 class="text-uppercase font-weight-bold">Acerca</h5>
+              <p>Sistema de ingreso para pacientes, proximamente se agregara registro para clientes</p>
+      
+            </div>
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <h5 class="text-uppercase font-weight-bold">Informacion</h5>
+              <p>Si tiene dificultades para usar la plataforma llame al siguiente numero: +593 998 801 315 </p>
+      
+            </div>
+      
+          </div>
+      
+        </div>
+        
+      </footer>
+      <script src="jquery.js"></script>
+      <script>
+        $(function(){
+          $("#menu li").on("click", function(){
+            var i = $(this).index();
+            $("#formularios form").hide();
+            $("#formularios form").eq(i).show();
+            $("#menu li a").removeClass("active");
+            $(this).find("a").addClass("active");
+          });
+        });
+      </script>
+</body>
+</html>

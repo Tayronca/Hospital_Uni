@@ -1,0 +1,32 @@
+body{
+    background-image: url(../Imagenes/fondo.jpg);
+    height: 800px;
+}
+.Container{
+    height: 0px;
+}
+
+footer{
+    background: #202020;
+    color: white;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0;
+
+}
+
+.card text-center {
+    margin: 40px;
+
+}
+
+.text{
+    text-align:center;
+  
+}
+
+.carousel-inner{
+    height:800px ;
+}
+
