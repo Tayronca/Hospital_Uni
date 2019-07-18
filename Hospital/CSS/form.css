@@ -1,48 +1,49 @@
-body{font-family: Arial; 
-    background-color: #18A383;
-     box-sizing: border-box; 
-     padding-top: 100px;
+*{
+  padding: 0;
+  margin: 0;
+
 }
 
-.navul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f8f9fa;
-  }
+body{ 
+  background-image: url(../Imagenes/fondo.jpg);
+  height: 800px;
+     
+}
 
-  .nom{
-float: left;
-  }
+.menu-header ul{
+  display: flex;
+  justify-content: flex-end;
+}
 
-  li{
-      float: right;
-      border-right:1px solid black;
-  }
 
-  li a {
-    display: block;
-    color:black;
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
 
-  li a:hover:not(.active) {
-    background-color: #4CAF50;
-  }
-  
+
+
+
+
 form{
-    background-color: white;
+    border: 1px solid #eee;
+    background-color: #ffffff;
     border-radius: 0 0 3px 3px;
     color: #999;
     font-size: 0.8em;
     padding: 20px;
-    margin: 0 auto;
+    margin: 100px;
     width: 300px;
+   
+    
+    
+  
 }
 
+.formulario{
+  display: flex;
+  align-content: center;
+  
+}
+
+.btn{
+  margin:  10px;}
 
 .field{
     border: solid 1px #ccc;
@@ -61,6 +62,8 @@ form{
   display: inline-block;
   vertical-align: top;
 }
+
+}
 .field-container i{
     border: solid 1px #ccc;
     background-color: #ddd;
@@ -70,9 +73,14 @@ form{
     margin-right: -5px;
     vertical-align: top;
 }
+
+
 footer{
-    background: #202020;
-    color: white;
-    height: 110px;
-    margin-top: 75px;
+  background: #202020;
+  color: white;
+  width: 100%;
+  
+  position: fixed;
+  bottom: 0;
+
 }

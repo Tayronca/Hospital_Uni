@@ -1,3 +1,7 @@
+body{
+    background-image: url(../Imagenes/fondo.jpg);
+    height: 800px;
+}
 .Container{
     height: 0px;
 }
@@ -5,7 +9,10 @@
 footer{
     background: #202020;
     color: white;
-    height: 110px;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0;
 
 }
 
@@ -23,6 +30,3 @@ footer{
     height:800px ;
 }
 
-.navbar-brand{
-    
-}

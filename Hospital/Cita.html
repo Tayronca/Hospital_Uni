@@ -20,10 +20,10 @@
             <a class="nav-link" href="../Hospital/Inicio.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Ingresar Paciente</a>
+            <a class="nav-link" href="../Hospital/Reuser.html">Ingresar Paciente</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="../Hospital/Cita.html">Agendar Cita</a>
+              <a class="nav-link" href="#">Agendar Cita</a>
             </li>
       
         </ul>
@@ -32,42 +32,28 @@
     
 </nav>
 
-<div class="formulario">
-  <form>
-    <p>Nombres Completos</p>
-    <div class="field-container">
-        <i class="fas fa-address-card"></i>
-        <input type="text" class="field" required  title="Ingrese sus nombres puede ser uno o dos"><br/> 
-    </div>
-    
- <p>Apellidos Completos</p>
- <div class="field-container">
-    <i class="fas fa-address-card"></i>
-    <input type="text" class="field" required title="Ingrese los apellidos que tenga"><br/>
- </div>
-   
-
- <p>Número de Cedula</p>
- <div class="field-container">
-    <i class="fas fa-id-card"></i>
- <input type="number" class="field" required pattern="[0-9] {10}" title="Ingrese 10 numeros" ><br/>
- 
-</div>
- 
- <p>Historia Clinica</p>
- <div class="field-container">
-    <i class="far fa-address-book"></i>
- <input type="number" class="field" required><br/>
- 
-</div>
-
-
-<input class="btn btn-primary" type="submit" value="Enviar">
-    
-
-      </form>
+   <div class="formulario">
+      <form >
+          <p>Ingrese Numero de Historia Clinica</p>
+          <div class="field-container">
+              <i class="fas fa-address-card"></i>
+              <input type="text" class="field" required ><br/> 
+          </div>
+          
+       <p>Ingrese Fecha de Cita</p>
+       <div class="field-container">
+          <i class="fas fa-address-card"></i>
+          <input type="date" class="field" required ><br/>
+       </div>
       
-</div>
+      <p>
+          <input class="btn btn-primary" type="submit" value="Enviar"> 
+         </form>
+      
+   </div>
+        
+
+
 
  
 
@@ -98,7 +84,17 @@
         </div>
         
       </footer>
-    
-      
+      <script src="jquery.js"></script>
+      <script>
+        $(function(){
+          $("#menu li").on("click", function(){
+            var i = $(this).index();
+            $("#formularios form").hide();
+            $("#formularios form").eq(i).show();
+            $("#menu li a").removeClass("active");
+            $(this).find("a").addClass("active");
+          });
+        });
+      </script>
 </body>
 </html>
